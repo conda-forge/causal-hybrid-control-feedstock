@@ -1,6 +1,6 @@
 context:
   name: causal-hybrid-control
-  version: "0.6.0"
+  version: "0.21.0"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/causal_hybrid_control-${{ version }}.tar.gz
-  sha256: 02605487b60d1c1c2233b01fe050e93e76fd6151f2d84ea2c63b345e4bba826f
+  sha256: 213238c3098feb780eef79d4563f939c13b833028999df6a4fe05447b76d2559
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     # mirrors requires-python and [project].dependencies in pyproject.toml
-    - python >=${{ python_min }},<3.15
+    - python >=${{ python_min }}
     - jax >=0.4.30
     - diffrax >=0.6
     - optax >=0.2.3
@@ -46,7 +46,7 @@ about:
   homepage: https://github.com/causaldyn/causal-hybrid-control
   repository: https://github.com/causaldyn/causal-hybrid-control
   summary: Physics-structured dynamics with a learned causal residual, controlled by constrained optimal control / MPC.
-  license: MIT
+  license: Apache-2.0
   license_file: LICENSE
 
 extra:
