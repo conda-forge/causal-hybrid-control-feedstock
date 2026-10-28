@@ -1,6 +1,6 @@
 context:
   name: causal-hybrid-control
-  version: "0.22.0"
+  version: "0.23.0"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/causal_hybrid_control-${{ version }}.tar.gz
-  sha256: 26ba8c5b72ad5ee484ac1bc99771c4db69c8136266d4fa3b6f9e3e2d913619a3
+  sha256: cf24b8d873e237102c9f7d05355d81731745f0444eaf294ab8b917a2bc134e05
 
 build:
   number: 0
